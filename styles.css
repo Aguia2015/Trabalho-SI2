@@ -1,4 +1,6 @@
 :root {
+  font-family: "Segoe UI", sans-serif;
+  
   --bg-dark: #171a21;
   --panel: #1b2838;
   --input: #2a475e;
@@ -51,6 +53,14 @@ label span {
 }
 input[type="text"], input[type="password"] {
   width: 100%;
+  padding: 0.6rem;
+  background: var(--input);
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+input[type="dado"] {
+  width: 25%;
   padding: 0.6rem;
   background: var(--input);
   border: none;
@@ -137,6 +147,7 @@ body.light-mode .login-container {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+body.light-mode input[type="dado"],
 body.light-mode input[type="text"],
 body.light-mode input[type="password"] {
   background-color: var(--input-light);

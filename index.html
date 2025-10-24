@@ -7,8 +7,23 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="login-page">
-
   <div class="login-container">
+    <div class="dado">
+    <h2>Rode um dado!</h2>
+      <form id="formDado"></form>
+        <label>
+          <span>Número mínimo</span>
+          <input type="dado" id="dadoMin" onkeypress="return IsNumber(event)" required />
+        </label>
+        <label>
+          <span>Número máximo</span>
+          <input type="dado" id="dadoMax" onkeypress="return IsNumber(event)" required />
+        </label>
+        <div id="dadoBtn" onclick="RodarDado(this)">
+          <button class="btn" id="dadoBtnTexto">Rode</button>
+        </div>
+      </form>
+    </div>
     <h2>Sign in with account name</h2>
     <form id="loginForm">
       <label>
@@ -40,5 +55,7 @@
   </div>
 
   <script src="Js.js"></script>
+  <script src="js/daniel.js"></script>
+
 </body>
 </html>

@@ -9,7 +9,7 @@ function RodarDado()
     else if (min < 0 || max < 0)
         texto = "Números devem ser positivos!";
     else   
-        texto = GetRandomInt(min, max).toString();
+        texto = "🎲 " + GetRandomInt(min, max).toString();
     
     document.getElementById("dadoBtnTexto").textContent = texto + " - Rode outro dado";
 }
